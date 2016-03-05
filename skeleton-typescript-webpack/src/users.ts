@@ -1,6 +1,6 @@
 import {autoinject} from 'aurelia-framework';
 import {HttpClient} from 'aurelia-fetch-client';
-import 'fetch';
+import 'isomorphic-fetch';
 
 @autoinject
 export class Users {

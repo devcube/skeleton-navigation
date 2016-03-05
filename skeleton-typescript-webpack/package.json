@@ -1,8 +1,7 @@
 {
-  "name": "aurelia-skeleton-navigation-webpack",
+  "name": "aurelia-skeleton-navigation-typescript-webpack",
   "version": "0.1.0",
-  "description": "A starter kit for building a standard navigation-style app with Aurelia and webpack.",
-  "main": "index.js",
+  "description": "A starter kit for building a standard navigation-style app with Aurelia, TypeScript and webpack.",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.config.js --hot --inline --progress --devtool eval",
     "build": "webpack --config webpack.config.js --progress --profile",
@@ -17,9 +16,10 @@
     "aurelia",
     "skeleton",
     "navigation",
+    "typescript",
     "webpack"
   ],
-  "author": "Martijn Boland",
+  "author": "Michael Söderman",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/aurelia/skeleton-navigation/issues"

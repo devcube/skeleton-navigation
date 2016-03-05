@@ -5,7 +5,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/font-awesome/css/font-awesome.css';
 import '../styles/styles.css';
 
-export function configure(aurelia: Aurelia) {
+bootstrap(function(aurelia) {
   aurelia.use
     .standardConfiguration()
     .developmentLogging();
@@ -16,5 +16,5 @@ export function configure(aurelia: Aurelia) {
   //Anyone wanting to use HTMLImports to load views, will need to install the following plugin.
   //aurelia.use.plugin('aurelia-html-import-template-loader')
 
-  aurelia.start().then(() => aurelia.setRoot());
-}
+  aurelia.start().then(() => aurelia.setRoot('app.ts', document.body));
+});

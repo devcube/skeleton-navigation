@@ -10,7 +10,7 @@ var outputFileTemplateSuffix = '-' + pkg.version;
 module.exports = {
   entry: {
     main: [
-      './src/main'
+      './src/main.ts'
     ]
   },
   output: {
@@ -33,7 +33,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.js$/, loader: 'babel', exclude: /node_modules/, query: {stage: 0} },
+      { test: /\.ts$/, loader: 'ts-loader', exclude: /node_modules/ },
       { test: /\.css?$/, loader: 'style!css' },
       { test: /\.html$/, loader: 'raw' },
       { test: /\.(png|gif|jpg)$/, loader: 'url-loader?limit=8192' },
